@@ -1,4 +1,3 @@
-set -o vi
 source ~/.bash_aliases
 export EDITOR=vim
 

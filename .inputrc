@@ -1,0 +1,4 @@
+set editing-mode vi
+set bell-style none
+"\e[1~": beginning-of-line # HOME key
+"\e[4~": end-of-line       # END key
