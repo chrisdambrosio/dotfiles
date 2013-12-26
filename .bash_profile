@@ -1,8 +1,6 @@
 source ~/.bash_aliases
 export EDITOR=vim
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 for dotfolder in $(find ~/.dotfiles_* -maxdepth 0 -type d 2> /dev/null); do
   if [ -f "$dotfolder/.bash_profile" ]
   then
@@ -13,3 +11,7 @@ done
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
