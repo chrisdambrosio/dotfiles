@@ -1,4 +1,3 @@
-source ~/.bash_aliases
 export EDITOR=vim
 
 # GNU coreutils for Mac
