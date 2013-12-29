@@ -1,7 +1,3 @@
-# GNU coreutils for Mac
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
 if ls --color -d . >/dev/null 2>&1; then # GNU ls
   alias ls="ls --color=auto"
   eval `dircolors ~/.dotfiles/dircolors.ansi-dark`
@@ -11,6 +7,5 @@ fi
 
 alias ll="ls -alF"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
