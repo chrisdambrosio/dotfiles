@@ -7,12 +7,7 @@ if [[ -d "$GNU_DIR" ]] ; then
   export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 fi
 
-for dotfolder in $(find ~/.dotfiles_* -maxdepth 0 -type d 2> /dev/null); do
-  if [ -f "$dotfolder/.bash_profile" ]
-  then
-    source "$dotfolder/.bash_profile"
-  fi
-done
+#for f in ~/.profile.d; do source $f; done
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
