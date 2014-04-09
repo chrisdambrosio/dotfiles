@@ -1,1 +1,2 @@
 # files that will be sourced, but not tracked as core dotfiles
+# this directory are ignored by dotfiles git repo
