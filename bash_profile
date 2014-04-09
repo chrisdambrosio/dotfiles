@@ -7,7 +7,7 @@ if [[ -d "$GNU_DIR" ]] ; then
   export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 fi
 
-#for f in ~/.profile.d; do source $f; done
+for f in ~/.profile.d/*; do source $f; done
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
