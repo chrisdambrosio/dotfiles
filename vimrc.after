@@ -1,3 +1,4 @@
+set t_Co=256
 set background=dark
 colorscheme solarized
 " zsh/rvm shell issue: http://rvm.io/integration/vim
