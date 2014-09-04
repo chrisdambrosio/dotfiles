@@ -6,3 +6,16 @@ if ls --color -d . >/dev/null 2>&1; then # GNU ls
 elif ls -G -d . >/dev/null 2>&1; then # BSD ls
   alias ls="ls -G"
 fi
+
+if [ -d "$HOME/.linuxbrew" ]; then
+  export PATH="$HOME/.linuxbrew/bin:$PATH"
+  export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
+fi
+
+if [ -d "$HOME/.go" ]; then
+  export GOPATH="$HOME/.go"
+  export PATH="$PATH:$HOME/.go/bin"
+fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
