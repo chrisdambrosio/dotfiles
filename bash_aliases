@@ -6,3 +6,4 @@ alias tmate="TERM=screen-256color tmate"
 alias v=vagrant
 # http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 alias sudo="sudo "
+alias be="bundle exec"
