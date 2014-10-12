@@ -7,3 +7,4 @@ alias v=vagrant
 # http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 alias sudo="sudo "
 alias be="bundle exec"
+alias udu="sudo apt-get update && sudo apt-get dist-upgrade"
