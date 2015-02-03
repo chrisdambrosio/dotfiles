@@ -2,9 +2,6 @@ set t_Co=256
 set background=dark
 colorscheme solarized
 
-" zsh/rvm shell issue: http://rvm.io/integration/vim
-set shell=/bin/sh
-
 " ignore some htmltidy warnings
 " https://github.com/scrooloose/syntastic/issues/612#issuecomment-52066598
 let g:syntastic_html_tidy_ignore_errors=
