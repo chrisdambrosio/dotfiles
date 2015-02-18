@@ -20,6 +20,11 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
+Plugin 'taylor/vim-zoomwin'
+Plugin 'godlygeek/tabular'
+Plugin 'fatih/vim-go'
+Plugin 'scrooloose/syntastic'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
