@@ -32,6 +32,7 @@ filetype plugin indent on    " required by vundle
 
 syntax on " Enable syntax highlighting
 
+set t_Co=256
 set background=dark
 colorscheme solarized
 
