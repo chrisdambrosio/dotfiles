@@ -24,7 +24,7 @@ Plugin 'taylor/vim-zoomwin'
 Plugin 'godlygeek/tabular'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/syntastic'
-
+Plugin 'ajf/puppet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
