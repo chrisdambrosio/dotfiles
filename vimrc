@@ -37,6 +37,8 @@ set background=dark
 colorscheme solarized
 
 set relativenumber
+set number " http://jeffkreeftmeijer.com/2013/vims-new-hybrid-line-number-mode/
+
 set backspace=indent,eol,start
 set history=500
 set ruler
