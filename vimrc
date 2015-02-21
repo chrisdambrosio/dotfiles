@@ -25,12 +25,24 @@ Plugin 'godlygeek/tabular'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/syntastic'
 Plugin 'ajf/puppet-vim'
+Plugin 'tkztmk/vim-vala'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
 filetype plugin indent on    " required by vundle
 
 syntax on " Enable syntax highlighting
+
+augroup myfiletypes
+  " Clear old autocmds in group
+  autocmd!
+  " autoindent with two spaces, always expand tabs
+  autocmd FileType ruby,eruby,yaml setlocal ai sw=2 sts=2 et
+  autocmd FileType ruby,eruby,yaml setlocal path+=lib
+  autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
+  " Make ?s part of words
+  autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
+augroup END
 
 set t_Co=256
 set background=dark
@@ -65,3 +77,4 @@ let g:syntastic_html_tidy_ignore_errors=
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|dist$\|node_modules$\|tmp$',
     \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
+
