@@ -35,6 +35,20 @@ task :install do
   end
 end
 
+namespace "vim" do
+  desc "install the dot files into user's home directory"
+  task :setup do
+    tmp_dir = File.expand_path "~/.tmp"
+    Dir.mkdir tmp_dir unless Dir.exist? tmp_dir
+
+    vundle_dir = File.expand_path "~/.vim/bundle/Vundle.vim"
+    unless Dir.exist? vundle_dir
+      system "git clone https://github.com/gmarik/Vundle.vim.git #{vundle_dir}"
+      system "vim +PluginInstall +qall"
+    end
+  end
+end
+
 def replace_file(file)
   system %Q{rm -rf "$HOME/.#{file.sub(/\.erb$/, '')}"}
   link_file(file)
