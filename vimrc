@@ -56,6 +56,7 @@ set history=500
 set ruler
 set autoindent
 set smarttab
+set expandtab
 set sw=2
 set nowrap
 set backupdir=~/.tmp
