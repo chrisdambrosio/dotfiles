@@ -51,17 +51,19 @@ colorscheme solarized
 set relativenumber
 set number " http://jeffkreeftmeijer.com/2013/vims-new-hybrid-line-number-mode/
 
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+
 set backspace=indent,eol,start
 set history=500
 set ruler
 set autoindent
 set smarttab
 set expandtab
-set sw=2
 set nowrap
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
-set tabstop=2
 set list listchars=tab:\|\ ,trail:. " Display extra whitespace
 set hlsearch
 
