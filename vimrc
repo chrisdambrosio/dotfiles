@@ -63,10 +63,12 @@ set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set tabstop=2
 set list listchars=tab:\|\ ,trail:. " Display extra whitespace
+set hlsearch
 
 let mapleader = ' '
 
 map <Leader>n :NERDTreeToggle<CR>
+map <C-h> :nohl<cr>
 
 " ignore some htmltidy warnings
 " https://github.com/scrooloose/syntastic/issues/612#issuecomment-52066598
