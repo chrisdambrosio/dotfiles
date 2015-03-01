@@ -27,6 +27,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ajf/puppet-vim'
 Plugin 'tkztmk/vim-vala'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
