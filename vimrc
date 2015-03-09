@@ -28,6 +28,7 @@ Plugin 'ajf/puppet-vim'
 Plugin 'tkztmk/vim-vala'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
@@ -68,11 +69,14 @@ set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set list listchars=tab:\|\ ,trail:. " Display extra whitespace
 set hlsearch
+set laststatus=2
 
 let mapleader = ' '
 
 map <Leader>n :NERDTreeToggle<CR>
 map <C-h> :nohl<cr>
+
+let g:airline_powerline_fonts = 1
 
 " ignore some htmltidy warnings
 " https://github.com/scrooloose/syntastic/issues/612#issuecomment-52066598
@@ -84,4 +88,3 @@ let g:syntastic_html_tidy_ignore_errors=
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|dist$\|node_modules$\|tmp$',
     \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
-
