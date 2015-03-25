@@ -29,6 +29,7 @@ Plugin 'tkztmk/vim-vala'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'bling/vim-airline'
+Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
@@ -75,6 +76,12 @@ let mapleader = ' '
 
 map <Leader>n :NERDTreeToggle<CR>
 map <C-h> :nohl<cr>
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 let g:airline_powerline_fonts = 1
 
