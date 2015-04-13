@@ -8,3 +8,4 @@ alias v=vagrant
 alias sudo="sudo "
 alias be="bundle exec"
 alias udu="sudo apt-get update && sudo apt-get dist-upgrade"
+alias gs="git s"
