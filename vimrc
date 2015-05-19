@@ -52,6 +52,8 @@ augroup myfiletypes
   autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
 augroup END
 
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
+
 set t_Co=256
 set background=dark
 colorscheme solarized
