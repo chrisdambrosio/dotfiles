@@ -1,3 +1,4 @@
+alias b="bundle"
 alias ll="ls -laF"
 alias ssh="TERM=xterm ssh"
 alias vim="TERM=screen-256color vim"
