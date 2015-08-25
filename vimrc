@@ -98,6 +98,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 let g:airline_powerline_fonts = 1
 
+let g:syntastic_enable_signs = 1
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+
 " ignore some htmltidy warnings
 " https://github.com/scrooloose/syntastic/issues/612#issuecomment-52066598
 let g:syntastic_html_tidy_ignore_errors=
