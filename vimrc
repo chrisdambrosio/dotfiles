@@ -35,6 +35,7 @@ Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'chase/vim-ansible-yaml'
+Plugin 'lambdatoast/elm.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
