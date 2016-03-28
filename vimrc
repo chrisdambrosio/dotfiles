@@ -37,6 +37,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'wellle/targets.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
