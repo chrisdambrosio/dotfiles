@@ -83,3 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # give me vim bindings damnit
 #bindkey -v
 #export KEYTIMEOUT=1 # decrease delay to 0.1 sec
+
+export NVM_DIR="/home/chris/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
