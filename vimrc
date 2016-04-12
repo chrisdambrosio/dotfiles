@@ -24,19 +24,15 @@ Plugin 'chrisdambrosio/ZoomWin'
 Plugin 'godlygeek/tabular'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/syntastic'
-Plugin 'ajf/puppet-vim'
-Plugin 'tkztmk/vim-vala'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'chase/vim-ansible-yaml'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'wellle/targets.vim'
 Plugin 'lambdatoast/elm.vim'
 
@@ -102,6 +98,8 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 let g:airline_powerline_fonts = 1
+
+let g:lightline = { 'colorscheme': 'solarized' }
 
 let g:syntastic_enable_signs = 1
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
