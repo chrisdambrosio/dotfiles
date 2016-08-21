@@ -35,6 +35,10 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'wellle/targets.vim'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'rust-lang/rust.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
@@ -54,6 +58,7 @@ augroup myfiletypes
 augroup END
 
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
+au BufRead,BufNewFile *.es6 set filetype=javascript
 
 set t_Co=256
 set background=dark
@@ -114,3 +119,5 @@ let g:syntastic_html_tidy_ignore_errors=
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|dist$\|node_modules$\|tmp$\|vendor/assets$\|source_maps$',
     \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
+
+let g:jsx_ext_required = 0
