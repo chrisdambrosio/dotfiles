@@ -84,6 +84,7 @@ set list listchars=tab:\|\ ,trail:. " Display extra whitespace
 set hlsearch
 set laststatus=2
 set synmaxcol=200 " vim slows down with very long lines
+set backupcopy=yes " resolves file watcher issues
 
 let mapleader = ' '
 
