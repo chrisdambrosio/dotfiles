@@ -82,6 +82,7 @@ set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set list listchars=tab:\|\ ,trail:. " Display extra whitespace
 set hlsearch
+set incsearch
 set laststatus=2
 set synmaxcol=200 " vim slows down with very long lines
 set backupcopy=yes " resolves file watcher issues
