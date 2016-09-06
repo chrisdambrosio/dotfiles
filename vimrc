@@ -34,12 +34,12 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'wellle/targets.vim'
-Plugin 'lambdatoast/elm.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'rust-lang/rust.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'elmcast/elm-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
@@ -111,6 +111,7 @@ let g:lightline = { 'colorscheme': 'solarized' }
 
 let g:syntastic_enable_signs = 1
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:elm_syntastic_show_warnings = 1
 
 " ignore some htmltidy warnings
 " https://github.com/scrooloose/syntastic/issues/612#issuecomment-52066598
