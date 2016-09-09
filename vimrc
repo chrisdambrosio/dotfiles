@@ -31,7 +31,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'editorconfig/editorconfig-vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'wellle/targets.vim'
 Plugin 'elixir-lang/vim-elixir'
@@ -56,7 +55,9 @@ augroup myfiletypes
   autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
   " Make ?s part of words
   autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
+  autocmd FileType elm setlocal sw=4 sts=4 expandtab
 augroup END
+
 
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 au BufRead,BufNewFile *.es6 set filetype=javascript
