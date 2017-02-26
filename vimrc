@@ -39,6 +39,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elmcast/elm-vim'
+Plugin 'tpope/vim-ragtag'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by vundle
