@@ -1,49 +1,41 @@
-" Vundle stuff
-
-set nocompatible " Required by vundle
-filetype off     " Required by vundle
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-rails'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'kien/ctrlp.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'chrisdambrosio/ZoomWin'
-Plugin 'godlygeek/tabular'
-Plugin 'fatih/vim-go'
-Plugin 'scrooloose/syntastic'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-commentary'
-Plugin 'itchyny/lightline.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'rking/ag.vim'
-Plugin 'Glench/Vim-Jinja2-Syntax'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'wellle/targets.vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'rust-lang/rust.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'elmcast/elm-vim'
-Plugin 'tpope/vim-ragtag'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required by vundle
-filetype plugin indent on    " required by vundle
+packadd minpac
+call minpac#init()
+call minpac#add('tpope/vim-surround')
+call minpac#add('tpope/vim-repeat')
+call minpac#add('tpope/vim-unimpaired')
+call minpac#add('k-takata/minpac')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('thoughtbot/vim-rspec')
+call minpac#add('tpope/vim-bundler')
+call minpac#add('tpope/vim-endwise')
+call minpac#add('tpope/vim-rails')
+call minpac#add('vim-ruby/vim-ruby')
+call minpac#add('kien/ctrlp.vim')
+call minpac#add('altercation/vim-colors-solarized')
+call minpac#add('scrooloose/nerdtree')
+call minpac#add('chrisdambrosio/ZoomWin')
+call minpac#add('godlygeek/tabular')
+call minpac#add('fatih/vim-go')
+call minpac#add('scrooloose/syntastic')
+call minpac#add('terryma/vim-multiple-cursors')
+call minpac#add('tpope/vim-commentary')
+call minpac#add('itchyny/lightline.vim')
+call minpac#add('kchmck/vim-coffee-script')
+call minpac#add('rking/ag.vim')
+call minpac#add('Glench/Vim-Jinja2-Syntax')
+call minpac#add('mustache/vim-mustache-handlebars')
+call minpac#add('chase/vim-ansible-yaml')
+call minpac#add('wellle/targets.vim')
+call minpac#add('elixir-lang/vim-elixir')
+call minpac#add('rust-lang/rust.vim')
+call minpac#add('pangloss/vim-javascript')
+call minpac#add('mxw/vim-jsx')
+call minpac#add('leafgarland/typescript-vim')
+call minpac#add('elmcast/elm-vim')
+call minpac#add('tpope/vim-ragtag')
+call minpac#add('javier-lopez/sml.vim')
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
 
 syntax on " Enable syntax highlighting
 
