@@ -38,6 +38,7 @@ command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
 syntax on " Enable syntax highlighting
+filetype plugin indent on
 
 augroup myfiletypes
   " Clear old autocmds in group
@@ -50,7 +51,6 @@ augroup myfiletypes
   autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
   autocmd FileType elm setlocal sw=4 sts=4 expandtab
 augroup END
-
 
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 au BufRead,BufNewFile *.es6 set filetype=javascript
