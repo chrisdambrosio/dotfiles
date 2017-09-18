@@ -82,6 +82,8 @@ set laststatus=2
 set synmaxcol=200 " vim slows down with very long lines
 set backupcopy=yes " resolves file watcher issues
 
+set pastetoggle=<F2>
+
 let mapleader = ' '
 
 " RSpec.vim mappings
