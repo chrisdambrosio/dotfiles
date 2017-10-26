@@ -1,15 +1,15 @@
 [user]
-	name = Chris D'Ambrosio
-	email = cdambrosio@gmail.com
+  name = Chris D'Ambrosio
+  email = cdambrosio@gmail.com
 [color]
-	ui = true
+  ui = true
 [push]
-	default = simple
+  default = simple
 [pull]
-	rebase = true
+  rebase = true
 [alias]
-	s = status -s
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+  s = status -s
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
 [core]
-	quotepath = false
+  quotepath = false
