@@ -21,7 +21,7 @@ call minpac#add('terryma/vim-multiple-cursors')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('kchmck/vim-coffee-script')
-call minpac#add('rking/ag.vim')
+call minpac#add('mileszs/ack.vim')
 call minpac#add('Glench/Vim-Jinja2-Syntax')
 call minpac#add('mustache/vim-mustache-handlebars')
 call minpac#add('chase/vim-ansible-yaml')
@@ -116,6 +116,8 @@ let g:elm_syntastic_show_warnings = 1
 let g:syntastic_html_tidy_ignore_errors=
   \ [" proprietary attribute " ,"trimming empty <", "unescaped &" ,
   \ "lacks \"action", "is not recognized!", "discarding unexpected"]
+
+let g:ackprg = 'ag --vimgrep'
 
 " custom ctrlp ignore settings
 let g:ctrlp_custom_ignore = {
