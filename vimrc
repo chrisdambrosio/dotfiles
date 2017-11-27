@@ -10,7 +10,7 @@ call minpac#add('tpope/vim-bundler')
 call minpac#add('tpope/vim-endwise')
 call minpac#add('tpope/vim-rails')
 call minpac#add('vim-ruby/vim-ruby')
-call minpac#add('kien/ctrlp.vim')
+call minpac#add('junegunn/fzf.vim')
 call minpac#add('altercation/vim-colors-solarized')
 call minpac#add('scrooloose/nerdtree')
 call minpac#add('chrisdambrosio/ZoomWin')
@@ -101,6 +101,8 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+nnoremap <C-p> :Files<CR>
+
 let g:airline_powerline_fonts = 1
 
 let g:lightline = { 'colorscheme': 'solarized' }
@@ -121,3 +123,19 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
 
 let g:jsx_ext_required = 0
+
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
