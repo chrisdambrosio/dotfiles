@@ -1,4 +1,4 @@
-source ~/.bash_aliases
+source ~/.aliases
 
 # NPM - User wide installs
 PATH="$HOME/.node_modules/bin:$PATH"
