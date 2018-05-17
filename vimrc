@@ -35,6 +35,7 @@ call minpac#add('elmcast/elm-vim')
 call minpac#add('tpope/vim-ragtag')
 call minpac#add('javier-lopez/sml.vim')
 call minpac#add('posva/vim-vue')
+call minpac#add('prettier/vim-prettier')
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
