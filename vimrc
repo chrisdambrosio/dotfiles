@@ -53,6 +53,9 @@ augroup myfiletypes
   " Make ?s part of words
   autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
   autocmd FileType elm setlocal sw=4 sts=4 expandtab
+
+  " https://github.com/posva/vim-vue#my-syntax-highlighting-stops-working-randomly
+  autocmd FileType vue syntax sync fromstart
 augroup END
 
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
