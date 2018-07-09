@@ -38,6 +38,7 @@ call minpac#add('posva/vim-vue')
 call minpac#add('prettier/vim-prettier')
 call minpac#add('tpope/vim-rhubarb')
 call minpac#add('jparise/vim-graphql')
+call minpac#add('dart-lang/dart-vim-plugin')
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
