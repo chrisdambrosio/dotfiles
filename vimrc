@@ -39,6 +39,7 @@ call minpac#add('prettier/vim-prettier')
 call minpac#add('tpope/vim-rhubarb')
 call minpac#add('jparise/vim-graphql')
 call minpac#add('dart-lang/dart-vim-plugin')
+call minpac#add('AndrewRadev/splitjoin.vim')
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
