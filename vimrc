@@ -57,6 +57,9 @@ augroup myfiletypes
   autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
   autocmd FileType elm setlocal sw=4 sts=4 expandtab
 
+  autocmd FileType dart setlocal cinoptions+=(1s,[1s,U1,m1
+  autocmd FileType dart setlocal indentkeys+=0},0),0]
+
   " https://github.com/posva/vim-vue#my-syntax-highlighting-stops-working-randomly
   autocmd FileType vue syntax sync fromstart
 augroup END
@@ -150,3 +153,5 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+let g:dart_style_guide = 2
