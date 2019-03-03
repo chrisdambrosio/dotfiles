@@ -40,6 +40,8 @@ call minpac#add('tpope/vim-rhubarb')
 call minpac#add('jparise/vim-graphql')
 call minpac#add('dart-lang/dart-vim-plugin')
 call minpac#add('AndrewRadev/splitjoin.vim')
+call minpac#add('alampros/vim-styled-jsx')
+call minpac#add('hail2u/vim-css3-syntax')
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
