@@ -42,6 +42,7 @@ call minpac#add('dart-lang/dart-vim-plugin')
 call minpac#add('AndrewRadev/splitjoin.vim')
 call minpac#add('alampros/vim-styled-jsx')
 call minpac#add('hail2u/vim-css3-syntax')
+call minpac#add('hashivim/vim-terraform')
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
