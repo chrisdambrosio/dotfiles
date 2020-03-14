@@ -26,7 +26,7 @@ call minpac#add('Glench/Vim-Jinja2-Syntax')
 call minpac#add('mustache/vim-mustache-handlebars')
 call minpac#add('chase/vim-ansible-yaml')
 call minpac#add('wellle/targets.vim')
-call minpac#add('elixir-lang/vim-elixir')
+call minpac#add('elixir-editors/vim-elixir')
 call minpac#add('rust-lang/rust.vim')
 call minpac#add('pangloss/vim-javascript')
 call minpac#add('MaxMEllon/vim-jsx-pretty')
@@ -157,3 +157,13 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 let g:dart_style_guide = 2
+
+let g:ale_linters = {
+\   'elixir': ['elixir-ls'],
+\}
+
+let g:ale_fixers = {
+\   'elixir': ['mix_format'],
+\}
+
+let g:ale_elixir_elixir_ls_release = '/opt/elixir-ls'
