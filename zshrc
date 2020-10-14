@@ -19,3 +19,5 @@ antigen apply
 
 source /usr/share/chruby/chruby.sh
 source /usr/share/nvm/init-nvm.sh
+
+eval `dircolors .dircolors.ansi-dark`
