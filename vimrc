@@ -167,4 +167,4 @@ let g:ale_fixers = {
 \   'elixir': ['mix_format'],
 \}
 
-let g:ale_elixir_elixir_ls_release = '/opt/elixir-ls'
+let g:ale_elixir_elixir_ls_release = '/usr/lib/elixir-ls'
