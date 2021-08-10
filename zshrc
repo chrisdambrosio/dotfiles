@@ -17,7 +17,4 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
-source /usr/share/chruby/chruby.sh
-source /usr/share/nvm/init-nvm.sh
-
-eval `dircolors .dircolors.ansi-dark`
+source /opt/asdf-vm/asdf.sh
