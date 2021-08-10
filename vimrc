@@ -43,6 +43,8 @@ call minpac#add('AndrewRadev/splitjoin.vim')
 call minpac#add('alampros/vim-styled-jsx')
 call minpac#add('hail2u/vim-css3-syntax')
 call minpac#add('hashivim/vim-terraform')
+call minpac#add('vim-python/python-syntax')
+call minpac#add('vim-test/vim-test')
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
@@ -101,22 +103,17 @@ set pastetoggle=<F2>
 
 let mapleader = ' '
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
 map <Leader>n :NERDTreeToggle<CR>
 map <C-h> :nohl<cr>
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
 nnoremap <C-p> :Files<CR>
+
+nmap <silent> <Leader>tn :TestNearest<CR>
+nmap <silent> <Leader>tf :TestFile<CR>
+nmap <silent> <Leader>ts :TestSuite<CR>
+nmap <silent> <Leader>tl :TestLast<CR>
+nmap <silent> <Leader>tt :TestLast<CR>
+nmap <silent> <Leader>tg :TestVisit<CR>
 
 let g:airline_powerline_fonts = 1
 
