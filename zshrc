@@ -1,4 +1,9 @@
-source /usr/share/zsh/share/antigen.zsh
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  source $(brew --prefix)/share/antigen/antigen.zsh
+  [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+else
+  source /usr/share/zsh/share/antigen.zsh
+fi
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -16,5 +21,3 @@ antigen theme robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
-
-source /opt/asdf-vm/asdf.sh
