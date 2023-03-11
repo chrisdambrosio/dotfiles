@@ -2,6 +2,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   source $(brew --prefix)/share/antigen/antigen.zsh
   [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 else
+  source /opt/asdf-vm/asdf.sh
   source /usr/share/zsh/share/antigen.zsh
 fi
 
