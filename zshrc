@@ -1,8 +1,6 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
   source $(brew --prefix)/share/antigen/antigen.zsh
-  [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 else
-  source /opt/asdf-vm/asdf.sh
   source /usr/share/zsh/share/antigen.zsh
 fi
 
@@ -17,8 +15,23 @@ antigen bundle vi-mode
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+# Optional: Load asdf as an Antigen bundle (only if needed)
+# antigen bundle asdf
+
 # Load the theme.
 antigen theme robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
+
+# Ensure asdf is in PATH
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# Add asdf completions
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+autoload -Uz compinit && compinit
+
+export PATH="$(npm config get prefix)/bin:$PATH"
+
+# Added by Windsurf
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
